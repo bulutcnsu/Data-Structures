@@ -90,7 +90,7 @@ public class CircularQueue {
 	   queue.enqueue(89);
 	   queue.enqueue(41);
 	  
-	   queue.enqueue(0);
+	   queue.display();
 	}
 
 }
