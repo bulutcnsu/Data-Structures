@@ -61,7 +61,7 @@ public class Stack {
 		int size =11;
 		Stack stack =new Stack(size);
 		stack.push(15);
-		stack.push("Ýstanbul");
+		stack.push("Istanbul");
 		stack.push("Sydney");
 		stack.push(45);
 		stack.push('c');
