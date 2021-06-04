@@ -82,6 +82,19 @@ public class BST_Class {
        } 
        return minval; 
    } 
+	
+ void preorder() { 
+       preorder_Recursive(root); 
+   } 
+  
+	
+	 void preorder_Recursive(Node root) {
+	if (root != null) {
+		System.out.print(root.key + " ");
+		preorderTraversal(root.left);
+		preorderTraversal(root.right);
+	}
+}
   
    void inorder() { 
        inorder_Recursive(root); 
@@ -147,7 +160,9 @@ class Main{
 	        System.out.println("\nThe BST after Delete 12(leaf node):"); 
 	        bst.deleteKey(12); 
 	        
-	       	        
+	       	 	        
+	        System.out.println("\n Preordering:"); 
+	        bst.preorder();         
 	        System.out.println("\n Inordering:"); 
 	        bst.inorder(); 
 	        System.out.println("\n Postsordering:"); 
